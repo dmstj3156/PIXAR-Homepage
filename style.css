@@ -186,7 +186,7 @@ a{
 #main-visual{
   
   height: 100vh;
-  background-image: url(./images/main\ visual\ image.jpg);
+  background-image: url(./images/mainvisualimage.jpg);
   background-size: cover;
   background-position: center center;
 }
