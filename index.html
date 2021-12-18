@@ -6,29 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    
+    <script src="https://unpkg.com/boxicons@2.0.8/dist/boxicons.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
+    <script src="./nav.js"></script>
 </head>
 <body>
+  
   <header id = "main_header">
+ 
     <h1 class="logotitle">
       <a href="./index.html">
           <img src="./images/logo.png" alt="logo">
       </a>
   </h1>
-  <h2>
-    <ul>
-  <li> <a href="#"> <img src="./images/face.png"></a></li>
-  <li> <a href="#"> <img src="./images/ins.png" ></a></li>
-  <li> <a href="#"> <img src="./images/yu.png" ></a></li>
-  <li> <a href="#"><img src="./images/tw.png" ></a></li>
-</ul>
-</h2>
+
+  <div class="sns">
+   
+        <ul>
+      <li> <a href="#"> <img src="./images/face.png"></a></li>
+      <li> <a href="#"> <img src="./images/ins.png" ></a></li>
+      <li> <a href="#"> <img src="./images/yu.png" ></a></li>
+      <li> <a href="#"><img src="./images/tw.png" ></a></li>
+      </ul>
+</div>
+
+
     <nav id="gnb">
-      <ul>
-          <li><a href="#">feature films</a></li>
-          <li><a href="#">short films  </a>
+    
+      <div class="nav-icon">
+        <div></div>
+      </div>
+      <ul class="depth1">
+          <li class="menu"><a href="#">feature films</a></li>
+          <li class="menu">
+            <a href="#">short films 
+              <button>
+                <box-icon name='chevron-down'></box-icon>
+              </button> 
+            </a></li>
+           
               <ul class="depth2">
                 <li><a href="#">theatrical shorts</a></li>
                 <li><a href="#">disney+</a></li>
@@ -37,22 +53,37 @@
                 <li><a href="#">toy story toons</a></li>
                 <li><a href="#">home entertaintment</a></li>
               </ul>
-            </li>
-          <li><a href="#">technology   </a>
+            
+          <li class="menu">
+            <a href="#">technology   
+              <button>
+                <box-icon name='chevron-down'></box-icon>
+              </button> 
+            </a> </li>
               <ul class="depth2">
                 <li><a href="#">renderman</a></li>
                 <li><a href="#">graphic technologies</a></li>
                </ul>
-          </li>
-          <li><a href="#">careers      </a>
+         
+          <li  class="menu">
+            <a href="#">careers     
+              <button>
+                <box-icon name='chevron-down'></box-icon>
+              </button> 
+            </a></li>
               <ul class="depth2">
                 <li><a href="#">careers at pixar</a></li>
                 <li><a href="#">internships</a></li>
                 <li><a href="#">life at pixar</a></li>
                 <li><a href="#">events</a></li>
                 </ul>
-          </li>
-          <li><a href="#">extras</a>
+          
+          <li class="menu">
+            <a href="#">extras
+              <button>
+                <box-icon name='chevron-down'></box-icon>
+              </button> 
+            </a></li>
               <ul class="depth2">
                 <li><a href="#">art exhibition</a></li>
                 <li><a href="#">emotions at play</a></li>
@@ -61,8 +92,13 @@
                 <li><a href="#">pixar in a box</a></li>
                 
               </ul>
-            </li>
-            <li><a href="#">about</a>
+            
+            <li class="menu">
+              <a href="#">about
+                <button>
+                  <box-icon name='chevron-down'></box-icon>
+                </button> 
+              </a> </li>
               <ul class="depth2">
                 <li><a href="https://www.pixar.com/contact-us">contact us</a></li>
                 <li><a href="https://www.pixar.com/leadership">leadership</a></li>
@@ -70,16 +106,18 @@
                 <li><a href="https://www.pixar.com/upcoming">coming soon</a></li>
                 <li><a href="https://www.pixar.com/our-story-pixar">our story</a></li>
                 <li><a href="https://www.pixar.com/company-faqs">company faq's</a></li>
-              </ul>
-            </li>
+             
+            </ul>
                  <h3>© 1986-2021 DISNEY / PIXAR</h3>
                  
                 
      
         
        </nav>
+       <div class="nav-icon mainicon">
+        <div></div>
+      </div>
        
-      <button id="toggle">=</button>
     </header>
       <div class="fullpage">
         <section id="main-visual">
@@ -143,10 +181,10 @@
 
       <script>
         $(function(){
-          $('#toggle').click(function(){
+          $(' .nav-icon').click(function(){
             $('nav').toggleClass('show');
           })
-          if($(this).hasClass('active')){
+          if($(this).removeClass('show')){
             //열림버튼 표시
            
           } else {
@@ -157,6 +195,7 @@
         })
         
        
+
       </script>
 </body>
 </html>
