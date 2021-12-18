@@ -28,12 +28,12 @@
                             <li>CSS3</a></li>
                                 <ul>
                                     <li>풀스크린</li>
-                                    <li>background-attachment: fixed 속성을 이용한 배경이미지<</li>
+                                    <li>background-attachment: fixed 속성을 이용한 배경이미지</li>
                              </ul>
                             <li>JavaSCript</a></li>   
                             <ul>
                                     <li>아이콘을 이용해 nav 전체열고 닫기</li>
-                                    <li>depth2 네비게이션 내용을 열고 닫을 수 있도록 하고 열고 닫을 때마다 이이콘의 방향이 위아래로 변하도록 구현<</li>
+                                    <li>depth2 네비게이션 내용을 열고 닫을 수 있도록 하고 열고 닫을 때마다 이이콘의 방향이 위아래로 변하도록 구현</li>
                              </ul>
                             <li>Jquery</a></li>
                         </ul>
