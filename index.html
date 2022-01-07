@@ -10,7 +10,7 @@
   
      <!-- 모바일 CSS -->
     <link rel="stylesheet" href="./css/mobile.css" 
-    media="screen and (max-width: 767px)">
+    >
     <script src="https://unpkg.com/boxicons@2.0.8/dist/boxicons.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./nav.js"></script>
@@ -18,22 +18,22 @@
 <body>
   
   <header id = "main_header">
- 
-    <h1 class="logotitle">
-      <a href="./index.html">
-          <img src="./images/logo.png" alt="logo">
-      </a>
-  </h1>
+    <div class="container">
+      <h1 class="logotitle">
+        <a href="./index.html">
+            <img src="./images/logo.png" alt="logo">
+        </a>
+      </h1>
 
-  <div class="sns">
-   
-        <ul>
-      <li> <a href="#"> <img src="./images/face.png"></a></li>
-      <li> <a href="#"> <img src="./images/ins.png" ></a></li>
-      <li> <a href="#"> <img src="./images/yu.png" ></a></li>
-      <li> <a href="#"><img src="./images/tw.png" ></a></li>
-      </ul>
-</div>
+        <div class="sns-icon">
+        
+              <ul class="icon-list">
+            <li> <a href="#"> <img src="./images/face.png"></a></li>
+            <li> <a href="#"> <img src="./images/ins.png" ></a></li>
+            <li> <a href="#"> <img src="./images/yu.png" ></a></li>
+            <li> <a href="#"><img src="./images/tw.png" ></a></li>
+            </ul>
+        </div><!--sns-->
 
 
     <nav id="gnb">
@@ -133,10 +133,11 @@
        </nav>
        <div class="nav-icon mainicon">
         <div></div>
-      </div>
-       
+      </div><!--nav-icon mainicon-->
+    </div><!--container-->
     </header>
-      <div class="fullpage">
+     
+    <div class="fullpage">
         <section id="main-visual">
           <div class="visual">
             <img src="./images/main logo.png" alt="logo">
