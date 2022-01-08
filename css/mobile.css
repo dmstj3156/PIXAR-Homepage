@@ -132,7 +132,7 @@
         margin-top: 0px;
         width: 100%;
         z-index: 999;
-        
+        overflow: scroll;
       
       }
       #main_header  #gnb > ul.depth1{
@@ -275,7 +275,7 @@
             font-size: 20px;    
       }
       #up> #box{
-       margin-top: 180px;
+      
       position: absolute;
       margin-right: 0;
      right: 35px;
@@ -320,7 +320,7 @@
             font-size: 20px;    
       }
       #toy> #box{
-        margin-top: 160px;
+      
       position: absolute;
       margin-right: 0;
       right: 35px;
@@ -366,7 +366,7 @@
             font-size: 20px;    
       }
       #inside> #box{
-        margin-top: 150px;
+        
         position: absolute;
         left:35px;
         width: 767px;
@@ -513,7 +513,7 @@
           margin-top: 0px;
           width: 100%;
           z-index: 999;
-          
+          overflow: scroll;
         
         }
         #main_header  #gnb > ul.depth1{
@@ -1033,7 +1033,7 @@
               font-size: 20px;    
         }
         #up> #box{
-         margin-top: 180px;
+        
         position: absolute;
         margin-right: 0;
         left: 30px;
@@ -1077,7 +1077,7 @@
               font-size: 20px;    
         }
         #toy> #box{
-          margin-top: 200px;
+         
         position: absolute;
         margin-right: 0;
         left: 35px;
@@ -1122,7 +1122,7 @@
               font-size: 20px;    
         }
         #inside> #box{
-          margin-top: 150px;
+          
           position: absolute;
           left:35px;
           width: 340px;
