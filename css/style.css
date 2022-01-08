@@ -120,22 +120,26 @@ a{
   position: relative;
  
 }
+#main_header .container{
+ 
+}
  h1.logotitle{
-  padding-left: 880px;
-  float: left;
+ 
+ 
   text-align: center;
 }
 #main_header h1.logotitle > a > img{
-  padding-top: 20px;
+  padding-top: 15px;
   width: 180px;
 }
 #main_header .sns-icon{
   position: relative;
-  right: 80px;
+  
 }
 #main_header .icon-list{
   position: absolute;
-  right: 0;
+  right: 5em;
+  top: -80px;
 }
 #main_header .icon-list > li{
  margin-left: 30px;
@@ -146,10 +150,10 @@ a{
   width: 20px;
   height: 20px;
 }
-#main_header > .sns{
+#main_header  .sns{
   position: relative;
 }
-#main_header > .sns> ul{
+#main_header  .sns> ul{
   position: absolute;
   right:180px;
 }
@@ -172,13 +176,13 @@ a{
   margin-left: 5em;
     position: absolute;
     width: 30px;
-    top: 25px;
+   
   }
   .mainicon{
     position: fixed;
-   margin-left: 80px;
-  
-  
+    margin-left: 0;
+    top: 25px;
+   left: 5em
   }
   .nav-icon:after, 
   .nav-icon:before, 
@@ -340,6 +344,7 @@ transition: 0.5s;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  position: relative;
 }
 #up >#box>ul >  li{
   list-style-type: none;
@@ -359,10 +364,13 @@ transition: 0.5s;
       font-size: 20px;    
 }
 #up> #box{
-  margin-top: 320px;
- 
-  margin-right: -1200px;
-} 
+  margin-top: 180px;
+      position: absolute;
+      margin-right: 0;
+     right: -40px;
+      
+      
+}
 #toy >#box> h1{
   text-transform: uppercase;
   color: white;
@@ -379,6 +387,7 @@ transition: 0.5s;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  position: relative;
 }
 #toy >#box>ul >  li{
   list-style-type: none;
@@ -399,9 +408,10 @@ transition: 0.5s;
       font-size: 20px;    
 }
 #toy> #box{
-  margin-top: 320px;
-  float: right;
- margin-right: -1200px;
+  margin-top: 180px;
+      position: absolute;
+      margin-right: 0;
+     right: -40px;
 } 
 
 #inside >#box> h1{
@@ -419,6 +429,7 @@ transition: 0.5s;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  position: relative;
 }
 #inside>#box >ul >  li{
   list-style-type: none;
@@ -440,10 +451,10 @@ transition: 0.5s;
       font-size: 20px;    
 }
 #inside> #box{
-  margin-top: 320px;
-  float: right;
-  margin-right: -1200px;
-
+  margin-top: 180px;
+  position: absolute;
+  margin-right: 0;
+ right: -40px;
 } 
 #main_footer{
   width: 100%;

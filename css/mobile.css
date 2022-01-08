@@ -1,8 +1,390 @@
 
-    
-@media screen and (max-width:767px) {
+    /* 테블릿 가로 (해상도 768px ~ 1024px)*/
+     @media all and (min-width:768px) and (max-width:1024px) { 
       body{
+        max-width: 1024px;
+        min-width: 768px;
+        overflow: hidden;
+    }
+
+    .fullpage {
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        height: 100vh;
+        scroll-behavior: smooth;
+        width: 100%;
+      }
+    section {
+        height: 100vh;
+       width: 100%;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        
+      }
+    #main_header{
+        width: 100%;
+        height: 100px;
+        position: relative;
+      
+      }
+      #main_header .container{
+      position: relative;
+      
+      }
+      #main_header  h1.logotitle{
+      text-align: center;
+      padding-left: 0px;
+     
+      
+      }
+      #main_header .sns-icon{
+        display: none;
+      
+      }
+      #sns {
+          text-align: center;
+          margin-top: 40px;
+          display: block;
+      }
+    .sns>#sns> ul > li > a>img{
+        width: 17px;
+        height: 17px;
+      
+      }
+    .sns>#sns> ul > li{
+      display: inline-block;
+      margin: 12px;
+      }
+      /*gnb 햄버거버튼*/
+      nav {
+        position: fixed;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+    }
+      nav a{
+        text-decoration: none;
+        color: #444;
+        font-size: 25px;
+        display: block;
+        
+      }
+      nav.show{
+        display: block;
+      }
+      .nav-icon {
+        
+          position: absolute;
+          width: 30px;
+          top: 30px;
+           left: 25px;
+          margin-left: 0px;
+        
+        }
+        .mainicon{
+          position: absolute;
+         left: 25px;
+         
+        
+        
+        }
+        .nav-icon:after, 
+        .nav-icon:before, 
+        .nav-icon div {
+          
+          background-color: #444;
+          border-radius: 3px;
+          content: '';
+          display: block;
+          cursor: pointer;
+          top: 50px;
+          /* translateY value = height + margin */ 
+          height: 4px;
+          margin: 6px 0;
+          transition: all .5s ease-in-out;
+        }
+        
+        .nav-icon:hover:before {
+          /* translateY value = height + margin */ 
+          transform: translateY(10px) rotate(135deg);
+        }
+        
+        .nav-icon:hover:after {
+          /* translateY value = height + margin */ 
+          transform: translateY(-10px) rotate(-135deg);
+        }
+        
+        .nav-icon:hover div {
+          transform: scale(0);
+        }
+      /*gnb*/
+      
+      
+
+      #main_header   #gnb  h3{
+        padding-top: 10px;
+        font-size: 13px;
+        
+      }
+
+      #main_header  #gnb{
+        position: absolute;
+        margin-top: 0px;
+        width: 100%;
+        z-index: 999;
+        
+      
+      }
+      #main_header  #gnb > ul.depth1{
+        position: absolute;
+        font-size: 16px;
+        top: 130px;
+        width: 100%;
+        text-align: center;
+       
+      }
+      #gnb  ul.depth1 > li.menu{
+        padding-left: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      display: flex;
+      
+        /*width: 115px;*/
+        font-weight: bold;
+        /*outline: 1px solid gray;*/
+        font-size: 16px;
+        text-transform: uppercase;
+      
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+      }
+      #gnb > ul.depth1 > li.menu > a{
+          font-size: 23px;
+          display: flex;
+      }
+      #gnb > ul.depth1 > li.menu > a > button{
+          position: absolute;
+          right: 30px;
+      }
+      #gnb > ul > li > a {
+        color :#1d1d1d;
+      
+        
+        /*outline: 1px solid green;*/
+        
+      }
+      #gnb .depth2{
+        background-color: rgba(0,0,0,0.1);
+        max-height: 0;
+      width: 100%;
+      overflow: hidden;
+      transition: 0.5s;
+      }
+      /* 보임 block */
+      #gnb .depth2.active {
+        /* display: block; */
+        /* padding: 2em 1em; */
+        max-height: 400px;
+      }
+      
+      #gnb > ul > li > a:hover{
+        color: #1d1d1d;
+      }
+      #gnb .depth2 > li {
+        padding: 14px;
+        text-align: center;
+        
+      }
+      #gnb .depth2 > li > a{
+        color: rgba(0,0,0,0.7);
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      #gnb .depth2 > li > a:hover{
+        color: rgba(0,0,0,0.4);
+        
+      }
+      .depth1 button {
+        border: none;
+        background: transparent; /* 투명 배경 */
+        transition: 0.2s;
+      }
+      
+      /* 메뉴가 열리면 닫기 버튼 상태 */
+      .depth1 button.up {
+        transform: rotate(180deg);
+      }
+      #main-visual{
+        
+        height: 670px;
+        background-image: url(../images/mainvisualimage.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position:right;
+        width: 100%;
+      }
+      #main-visual > .visual{
+        position: relative;
+        
+      }
+      #main-visual > .visual > img{
+      position: absolute;
+     right: 0px;
+      padding-top: 0px;
+      top: 60px;
+     width: 400px;
+     height: 344px;
+      
+      }
+      #up>#box > h1{
+        text-transform: uppercase;
+        color: white;
+        font-size: 60px;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px black;
+        
+        
+        
+      
+      }
+      
+      #up{
+        background-image: url(../images/pixar_up.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        width: 100%;
+        position: relative;
+      }
+      #up >#box>ul >  li{
+        list-style-type: none;
+        display: inline-block;
+        line-height: 34px;
+      }
+      #up >#box> ul > li > a{
+        color: white;
+        font-size: 17px;
+        text-transform: uppercase;
+        line-height: 1.5em;
+        text-shadow: 1px 2px 3px black;
+      }
+      #up >#box> ul > li >a> span{
+            margin-left: 1em;
+            margin-right: 1em;
+            font-size: 20px;    
+      }
+      #up> #box{
+       margin-top: 180px;
+      position: absolute;
+      margin-right: 0;
+     right: 35px;
+      width: 768px;
+      text-align: right;
+      } 
+      #toy >#box> h1{
+        text-transform: uppercase;
+        color: white;
+        font-size: 50px;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px black;
+        width: 100%;
+       
+      
+      }
+      #toy{
+        background-image: url(../images/ToyStory3.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position:left;
+        background-attachment: fixed;
+        
+        position: relative;
+      }
+      #toy >#box>ul >  li{
+        list-style-type: none;
+        display: inline-block;
+        
+        
+      }
+      #toy >#box> ul > li > a{
+        color: white;
+        font-size: 17px;
+        text-transform: uppercase;
+        line-height: 1.5em;
+        text-shadow: 1px 2px 3px black;
+      }
+      #toy >#box> ul > li >a> span{
+            margin-left: 1em;
+            margin-right: 1em;
+            font-size: 20px;    
+      }
+      #toy> #box{
+        margin-top: 160px;
+      position: absolute;
+      margin-right: 0;
+      right: 35px;
+      width: 767px;
+      text-align: right;
+      } 
+      
+      #inside >#box> h1{
+        text-transform: uppercase;
+        color: white;
+        font-size: 50px;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px black;
+        width: 764px;
+      
+      }
+      #inside{
+        background-image: url(../images/g6.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        position: relative;
+        width: 100%;
+      }
+      #inside>#box >ul >  li{
+        list-style-type: none;
+        display: inline-block;
+        
+        
+      }
+      
+      #inside >#box> ul > li > a{
+        color: white;
+        font-size: 17px;
+        text-transform: uppercase;
+        line-height: 1.5em;
+        text-shadow: 1px 2px 3px black;
+      }
+      #inside >#box> ul > li >a> span{
+            margin-left: 1em;
+            margin-right: 1em;
+            font-size: 20px;    
+      }
+      #inside> #box{
+        margin-top: 150px;
+        position: absolute;
+        left:35px;
+        width: 767px;
+      } 
+      #main_footer{
+        width: 100%;
+        background-color: white;
+        height: 306px;
+        color: rgba(29,29,29,.7);
+      
+      }
+     } 
+    
+      /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/ 
+      @media all and (min-width:480px) and (max-width:767px) { 
+        body{
           max-width: 767px;
+          min-width: 481px;
           overflow: hidden;
       }
 
@@ -29,13 +411,12 @@
         }
         #main_header .container{
         position: relative;
-      
+        
         }
         #main_header  h1.logotitle{
         text-align: center;
         padding-left: 0px;
-        float: left;
-        position: absolute;
+       
         
         }
         #main_header .sns-icon{
@@ -77,14 +458,14 @@
             position: absolute;
             width: 30px;
             top: 30px;
-             right: 25px;
-            margin-left: 25px;
+             left: 25px;
+            margin-left: 0px;
           
           }
           .mainicon{
             position: absolute;
-           right: 25px;
-           margin-left: 0;
+           left: 25px;
+           
           
           
           }
@@ -221,18 +602,396 @@
           background-size:cover;
           background-repeat: no-repeat;
           background-position:right;
-          max-width: 767px;
+          width: 100%;
         }
         #main-visual > .visual{
           position: relative;
+          
+        }
+        #main-visual > .visual > img{
+        position: absolute;
+       right: -140px;
+        padding-top: 20px;
+       width: 400px;
+       height: 344px;
+        
+        }
+        #up>#box > h1{
+          text-transform: uppercase;
+          color: white;
+          font-size: 60px;
+          margin-bottom: 30px;
+          text-shadow: 2px 2px 4px black;
+          
+          
+          
+        
+        }
+        
+        #up{
+          background-image: url(../images/pixar_up.jpg);
+          height: 100vh;
+          background-size: cover;
+          background-position: center center;
+          background-attachment: fixed;
+          width: 100%;
+          position: relative;
+        }
+        #up >#box>ul >  li{
+          list-style-type: none;
+          display: inline-block;
+          line-height: 34px;
+        }
+        #up >#box> ul > li > a{
+          color: white;
+          font-size: 17px;
+          text-transform: uppercase;
+          line-height: 1.5em;
+          text-shadow: 1px 2px 3px black;
+        }
+        #up >#box> ul > li >a> span{
+              margin-left: 1em;
+              margin-right: 1em;
+              font-size: 20px;    
+        }
+        #up> #box{
+          margin-top: 160px;
+          position: absolute;
+          margin-right: 0;
+          left: 30px;
+          width: 480px;
+        } 
+        #toy >#box> h1{
+          text-transform: uppercase;
+          color: white;
+          font-size: 50px;
+          margin-bottom: 30px;
+          text-shadow: 2px 2px 4px black;
+          width: 764px;
+         
+        
+        }
+        #toy{
+          background-image: url(../images/ToyStory3.jpg);
+          height: 100vh;
+          background-size: cover;
+          background-position:left;
+          background-attachment: fixed;
           max-width: 767px;
+          position: relative;
+        }
+        #toy >#box>ul >  li{
+          list-style-type: none;
+          display: inline-block;
+          
+          
+        }
+        #toy >#box> ul > li > a{
+          color: white;
+          font-size: 17px;
+          text-transform: uppercase;
+          line-height: 1.5em;
+          text-shadow: 1px 2px 3px black;
+        }
+        #toy >#box> ul > li >a> span{
+              margin-left: 1em;
+              margin-right: 1em;
+              font-size: 20px;    
+        }
+        #toy> #box{
+          margin-top: 160px;
+        position: absolute;
+        margin-right: 0;
+        left: 30px;
+        width: 480px;
+        } 
+        
+        #inside >#box> h1{
+          text-transform: uppercase;
+          color: white;
+          font-size: 50px;
+          margin-bottom: 30px;
+          text-shadow: 2px 2px 4px black;
+          width: 764px;
+        
+        }
+        #inside{
+          background-image: url(../images/g6.jpg);
+          height: 100vh;
+          background-size: cover;
+          background-position: center center;
+          background-attachment: fixed;
+          position: relative;
+          max-width: 767px;
+        }
+        #inside>#box >ul >  li{
+          list-style-type: none;
+          display: inline-block;
+          
+          
+        }
+        
+        #inside >#box> ul > li > a{
+          color: white;
+          font-size: 17px;
+          text-transform: uppercase;
+          line-height: 1.5em;
+          text-shadow: 1px 2px 3px black;
+        }
+        #inside >#box> ul > li >a> span{
+              margin-left: 1em;
+              margin-right: 1em;
+              font-size: 20px;    
+        }
+        #inside> #box{
+          margin-top: 150px;
+          position: absolute;
+          left:30px;
+          width: 480px;
+        } 
+        #main_footer{
+          width: 100%;
+          background-color: white;
+          height: 306px;
+          color: rgba(29,29,29,.7);
+        
+        }
+       }
+       
+       
+      /* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
+       @media all and (max-width:479px) { 
+        body{
+          max-width: 479px;
+          overflow: hidden;
+      }
+
+      .fullpage {
+          scroll-snap-type: y mandatory;
+          overflow-y: scroll;
+          height: 100vh;
+          scroll-behavior: smooth;
+          width: 100%;
+        }
+      section {
+          height: 100vh;
+         width: 100%;
+          display: flex;
+          overflow: hidden;
+          justify-content: center;
+          
+        }
+      #main_header{
+          width: 100%;
+          height: 100px;
+          position: relative;
+        
+        }
+        #main_header .container{
+        position: relative;
+        
+        }
+        #main_header  h1.logotitle{
+        text-align: center;
+        padding-left: 0px;
+       
+        
+        }
+        #main_header .sns-icon{
+          display: none;
+        
+        }
+        #sns {
+            text-align: center;
+            margin-top: 40px;
+            display: block;
+        }
+      .sns>#sns> ul > li > a>img{
+          width: 17px;
+          height: 17px;
+        
+        }
+      .sns>#sns> ul > li{
+        display: inline-block;
+        margin: 12px;
+        }
+        /*gnb 햄버거버튼*/
+        nav {
+          position: fixed;
+          height: 100vh;
+          background-color: rgb(255, 255, 255);
+      }
+        nav a{
+          text-decoration: none;
+          color: #444;
+          font-size: 25px;
+          display: block;
+          
+        }
+        nav.show{
+          display: block;
+        }
+        .nav-icon {
+          
+            position: absolute;
+            width: 30px;
+            top: 30px;
+             left: 25px;
+            margin-left: 0px;
+          
+          }
+          .mainicon{
+            position: absolute;
+           left: 25px;
+           
+          
+          
+          }
+          .nav-icon:after, 
+          .nav-icon:before, 
+          .nav-icon div {
+            
+            background-color: #444;
+            border-radius: 3px;
+            content: '';
+            display: block;
+            cursor: pointer;
+            top: 50px;
+            /* translateY value = height + margin */ 
+            height: 4px;
+            margin: 6px 0;
+            transition: all .5s ease-in-out;
+          }
+          
+          .nav-icon:hover:before {
+            /* translateY value = height + margin */ 
+            transform: translateY(10px) rotate(135deg);
+          }
+          
+          .nav-icon:hover:after {
+            /* translateY value = height + margin */ 
+            transform: translateY(-10px) rotate(-135deg);
+          }
+          
+          .nav-icon:hover div {
+            transform: scale(0);
+          }
+        /*gnb*/
+        
+        
+
+        #main_header   #gnb  h3{
+          padding-top: 10px;
+          font-size: 13px;
+          
+        }
+
+        #main_header  #gnb{
+          position: absolute;
+          margin-top: 0px;
+          width: 100%;
+          z-index: 999;
+          
+        
+        }
+        #main_header  #gnb > ul.depth1{
+          position: absolute;
+          font-size: 16px;
+          top: 130px;
+          width: 100%;
+          text-align: center;
+         
+        }
+        #gnb  ul.depth1 > li.menu{
+          padding-left: 30px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+        display: flex;
+        
+          /*width: 115px;*/
+          font-weight: bold;
+          /*outline: 1px solid gray;*/
+          font-size: 16px;
+          text-transform: uppercase;
+        
+          border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        #gnb > ul.depth1 > li.menu > a{
+            font-size: 23px;
+            display: flex;
+        }
+        #gnb > ul.depth1 > li.menu > a > button{
+            position: absolute;
+            right: 30px;
+        }
+        #gnb > ul > li > a {
+          color :#1d1d1d;
+        
+          
+          /*outline: 1px solid green;*/
+          
+        }
+        #gnb .depth2{
+          background-color: rgba(0,0,0,0.1);
+          max-height: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: 0.5s;
+        }
+        /* 보임 block */
+        #gnb .depth2.active {
+          /* display: block; */
+          /* padding: 2em 1em; */
+          max-height: 400px;
+        }
+        
+        #gnb > ul > li > a:hover{
+          color: #1d1d1d;
+        }
+        #gnb .depth2 > li {
+          padding: 14px;
+          text-align: center;
+          
+        }
+        #gnb .depth2 > li > a{
+          color: rgba(0,0,0,0.7);
+          font-size: 14px;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+        #gnb .depth2 > li > a:hover{
+          color: rgba(0,0,0,0.4);
+          
+        }
+        .depth1 button {
+          border: none;
+          background: transparent; /* 투명 배경 */
+          transition: 0.2s;
+        }
+        
+        /* 메뉴가 열리면 닫기 버튼 상태 */
+        .depth1 button.up {
+          transform: rotate(180deg);
+        }
+        #main-visual{
+          
+          height: 670px;
+          background-image: url(../images/mainvisualimage.jpg);
+          background-size:cover;
+          background-repeat: no-repeat;
+          background-position:right;
+          width: 100%;
+        }
+        #main-visual > .visual{
+          position: relative;
+          
         }
         #main-visual > .visual > img{
         position: absolute;
         right: -120px;
         padding-top: 60px;
-        max-width: 320px;
-          height: 244.95px;
+       width: 320px;
+       height: 244px;
         
         }
         #up>#box > h1{
@@ -277,7 +1036,7 @@
          margin-top: 180px;
         position: absolute;
         margin-right: 0;
-        right: 0;
+        left: 30px;
         width: 340px;
         } 
         #toy >#box> h1{
@@ -375,7 +1134,10 @@
           color: rgba(29,29,29,.7);
         
         }
-      }      
-  
+        }
+
+
+       
+
   
   
