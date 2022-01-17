@@ -883,15 +883,15 @@
         #main_header   #gnb  h3{
           padding-top: 10px;
           font-size: 13px;
-          
+         
         }
-
+      
         #main_header  #gnb{
           position: absolute;
           margin-top: 0px;
           width: 100%;
           z-index: 999;
-          
+          overflow: scroll;
         
         }
         #main_header  #gnb > ul.depth1{

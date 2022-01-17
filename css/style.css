@@ -38,16 +38,29 @@ html{
     position: absolute;
     width: 30px;
     top: 25px;
+    
   }
-  .mainicon{
+    .mainicon{
     position: fixed;
    margin-left: 80px;
   
  
   }
-  .nav-icon:after, 
-  .nav-icon:before, 
-  .nav-icon div {
+   button.menu_btn{
+    background: none;
+    border: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+   bottom: 6px;
+    cursor: pointer;
+  }
+  #gnb .close{
+    margin-top: 5px;
+  }
+  #gnb .close:after, 
+  #gnb .close:before, 
+  #gnb .close div {
     
     background-color: #444;
     border-radius: 3px;
@@ -61,17 +74,17 @@ html{
     transition: all .3s ease-in-out;
   }
   
-  .nav-icon:hover:before {
+  #gnb .close:hover:before {
     /* translateY value = height + margin */ 
     transform: translateY(10px) rotate(135deg);
   }
   
-  .nav-icon:hover:after {
+  #gnb .close:hover:after {
     /* translateY value = height + margin */ 
     transform: translateY(-10px) rotate(-135deg);
   }
   
-  .nav-icon:hover div {
+  #gnb .close:hover div {
     transform: scale(0);
   }
   section {
@@ -228,7 +241,7 @@ nav.show{
 
 #main_header   #gnb  h3{
  text-align: center;
- padding-top: 330px;
+ padding-top:280px;
   font-size: 15px;
   letter-spacing: 2px;  
 }
@@ -238,7 +251,7 @@ nav.show{
   margin-top: 0px;
   width: 400px;
   z-index: 999;
-  overflow: scroll;
+  
 }
 #main_header  #gnb > ul.depth1{
   position: absolute;
@@ -262,7 +275,7 @@ nav.show{
   color :#1d1d1d;
   /*outline: 1px solid green;*/
 }
-#gnb > ul.depth1 > li.menu > a > button{
+#gnb > ul.depth1 > li.menu > button{
   position: absolute;
   right: 30px;
 }
