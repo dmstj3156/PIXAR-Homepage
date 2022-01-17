@@ -9,7 +9,7 @@ $(function(){
       // 아이콘의 상태: 닫힌상태 = 열림 아이콘(V), 열린상태 = 닫힘 아이콘(^)
       if($(this).next().hasClass('active')) {
         // 열렸을 때
-        $('.depth1 > li.menu > a > button').removeClass('up'); // 초기화
+        $('.depth1 >button').removeClass('up'); // 초기화
         $(this).find('button').addClass('up');
       } else {
         // 닫혔을 때
